@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53A3E37D-5CC0-425B-9C50-ADDD6EA7DF46}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BBAssist</RootNamespace>
+    <AssemblyName>BBAssist</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Backups\12-12 BBAssist.ahk" />
+    <None Include="Backups\12-12\BBAssist.ahk" />
+    <None Include="Backups\12-12\modules\Clarify.ahk" />
+    <None Include="Backups\12-12\modules\Logger.ahk" />
+    <None Include="Backups\12-12\modules\Utilities.ahk" />
+    <None Include="Backups\12-13\BBAssist.ahk" />
+    <None Include="Backups\12-13\modules\Clarify.ahk" />
+    <None Include="Backups\12-13\modules\Logger.ahk" />
+    <None Include="Backups\12-13\modules\Utilities.ahk" />
+    <None Include="Backups\12-13\options.ini" />
+    <None Include="Backups\12-13\res\bbassist.bak" />
+    <None Include="Backups\12-13\res\bbassist.cache" />
+    <None Include="Backups\12-4 BBAssist.ahk" />
+    <None Include="BBAssist Launcher.ahk" />
+    <None Include="BBAssist.ahk" />
+    <None Include="GetControls.ahk" />
+    <None Include="lib\Array.ahk" />
+    <None Include="lib\hkSwap.ahk" />
+    <None Include="lib\httpQuery.ahk" />
+    <None Include="lib\ini4ahkl\IniFile.ini" />
+    <None Include="lib\ini4ahkl\Sample_v5.ahk" />
+    <None Include="lib\Ini4Ahkl_v5.ahk" />
+    <None Include="lib\ini\ini.ahk" />
+    <None Include="lib\ini\ini_demo.ahk" />
+    <None Include="lib\ini\make_lib.ahk" />
+    <None Include="lib\klist.ahk" />
+    <None Include="lib\sc.ahk" />
+    <None Include="lib\xpath.ahk" />
+    <None Include="modules\Clarify.ahk" />
+    <None Include="modules\Clarity.ahk" />
+    <None Include="modules\Logger.ahk" />
+    <None Include="modules\Snagit.ahk" />
+    <None Include="modules\Utilities.ahk" />
+    <None Include="options.ini" />
+    <None Include="Test.ahk" />
+    <None Include="Tools\BBAssist Options.ahk" />
+    <None Include="Tools\calc.ahk" />
+    <None Include="Tools\ShellHook.ahk" />
+    <None Include="Tools\SmartGUI.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\ini.html" />
+    <Content Include="lib\ini\ini.html" />
+    <Content Include="lib\ini\license.txt" />
+    <Content Include="res\clarity.xml" />
+    <Content Include="Tools\Manual.htm" />
+    <Content Include="Tools\SmartGUI.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
